@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="jamber">Jam berapa</label>
+    <input type="text" id="jamber" name="jamber">
+    <input type="button" value="Salam" onclick="jam()"> <br>
+    <p id="salamku"></p>
+</body>
+<script>
+    function jam() {
+            var jam=document.getElementById("jamber").value;
+            if (jam<=5){
+              document.getElementById("salamku").innerHTML="Selamat tidur";
+            }else if(jam<=10){
+                document.getElementById("salamku").innerHTML="Selamat Pagi";
+            }else if(jam<=14){
+               document.getElementById("salamku").innerHTML="Selamat Siang";
+            }else if(jam<=17){
+                document.getElementById("salamku").innerHTML="Selamat Sore";
+            }else if(jam<=24){
+                document.getElementById("salamku").innerHTML="Selamat Malam";
+            }
+        }
+</script>
+</html>
